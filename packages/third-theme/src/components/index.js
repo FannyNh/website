@@ -8,6 +8,7 @@ import Post from "./post"
 import Page from "./page"
 import Loading from "./loading"
 import Error from "./error"
+import MainAnimation from "./animation/mainAnimation"
 
 const Root = ({state, actions}) => {
     const data = state.source.get(state.router.link)
@@ -23,6 +24,10 @@ const Root = ({state, actions}) => {
                  html {
                     font-family: system-ui, Verdana, Arial, sans-serif;
                 }
+                body{background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
+                width:100vw;
+                height: 100vh;
+                }
                 `}
             />
             <Head>
@@ -34,14 +39,15 @@ const Root = ({state, actions}) => {
             </Head>
             <Header />
             <Main>
-                <Switch>
-                    <Loading when={data.isFetching} />
-                    <List when={data.isArchive}/>
-                    <Post when={data.isPost}/>
-                    <Page when={data.isPage}/>
-                    <Page when={data.isDestinations} />
-                    <Error when={data.isError} />
-                </Switch>
+                <MainAnimation  />
+                {/*<Switch>*/}
+                {/*    <Loading when={data.isFetching} />*/}
+                {/*    <List when={data.isArchive}/>*/}
+                {/*    <Post when={data.isPost}/>*/}
+                {/*    <Page when={data.isPage}/>*/}
+                {/*    <Page when={data.isDestinations} />*/}
+                {/*    <Error when={data.isError} />*/}
+                {/*</Switch>*/}
             </Main>
         </>
     )
@@ -51,23 +57,10 @@ export default connect(Root)
 
 
 const Main = styled.main`
-  max-width: 800px;
-  padding: 1em;
+ position: absolute;
+  top:0;
+  width: 100vw;
+  padding: none;
   margin: auto;
-
-  img {
-    max-width: 100%;
-  }
-  h2 {
-    margin: 0.5em 0;
-  }
-  p {
-    line-height: 1.25em;
-    margin-bottom: 0.75em;
-  }
-  figcaption {
-    color: #828282;
-    font-size: 0.8em;
-    margin-bottom: 1em;
-  }
+height:100vh;
 `

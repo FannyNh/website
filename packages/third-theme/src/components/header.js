@@ -9,14 +9,14 @@ const Header = ({state, actions})=>{
     return(
         <HeaderStyle isPostType={data.isPostType}>
             <HeaderContent>
-                <h1>Hello Frontity</h1>
+                <h1>The third Moira</h1>
                 { state.theme.isUrlVisible
                     ? <>Current URL: {state.router.link} <Button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</Button></>
                     : <Button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</Button>
                 }                    <Menu>
-                <Link link="/">Home</Link>
-                <Link link="/destinations">Destinations</Link>
-                <Link link="/about-us">About Us</Link>
+                {/*<Link link="/">Home</Link>*/}
+                {/*<Link link="/destinations">Destinations</Link>*/}
+                {/*<Link link="/about-us">About Us</Link>*/}
             </Menu>
             </HeaderContent>
 
@@ -28,12 +28,26 @@ export  default connect(Header)
 
 
 const HeaderStyle = styled.header`
-  background-color: #e5edee;
-  border-width: 0 0 8px 0;
-  border-style: solid;
-  border-color: ${props => props.isPostType ? (props.isPage ? 'lightsteelblue' : 'lightseagreen') : 'maroon'};
+   overflow: hidden;
+    background-color: inherit;
+  position: absolute;
+  top:0;
+   border-radius: 15px;
+   border: 1px solid #009ffd;
+     box-shadow: 0 0 1rem 0 rgba(110,123,251,0.2);
+     :before {
+  background-color: inherit;
+  backdrop-filter: blur(19px) saturate(127%) contrast(76%) brightness(111%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+  
   h1 {
-    color: #4a4a4a;
+       color: #FFF;
+    position: relative;
+    z-index: 2;
   }
 `
 const HeaderContent = styled.div`

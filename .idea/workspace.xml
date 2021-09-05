@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29508264-ff70-439c-8c05-4971ec715342" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/featuredMedia.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/note.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/animation/mainAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/third-theme/src/components/animation/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontity.settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontity.settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/third-theme/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/third-theme/src/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/third-theme/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/third-theme/src/components/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +24,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/third-theme/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/third-theme/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/third-theme/src/components" />
       <recent name="$PROJECT_DIR$/packages/third-theme/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -53,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630846970406</updated>
-      <workItem from="1630846971516" duration="1638000" />
+      <workItem from="1630846971516" duration="6882000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1630847361083</created>
@@ -62,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630847361083</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init theme">
+      <created>1630848845228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630848845228</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="init theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="init theme" />
   </component>
 </project>
