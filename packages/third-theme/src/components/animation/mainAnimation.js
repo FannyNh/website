@@ -23,7 +23,12 @@ const MainAnimation = ({state, actions}) => {
             <svg style={{ position: 'absolute', width: 0, height: 0 }}>
                 <filter id="goo">
                     <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />
-                    <feColorMatrix in="blur" values="1 0 0 0 0 0 0 0 1 0 0 1 1 0 0 1 0 0 30 -7" />
+                    <feColorMatrix in="blur" values="
+                        0 0 1 0.6   0
+                        0 0 0.3 0.4 0
+                        1 1 5 4.0   0
+                        1 0 0 30 -7
+                        " />
                 </filter>
             </svg>
             <HooksMain>
@@ -33,7 +38,6 @@ const MainAnimation = ({state, actions}) => {
                     <anim.div className="b3" style={{ transform: pos1.interpolate(trans) }} />
                 </HooksFilter>
             </HooksMain>
-            <p>boo</p>
         </>
     )
 }
@@ -48,8 +52,8 @@ const HooksFilter = styled.div   `
     position: absolute;
     will-change: transform;
     border-radius: 50%;
-    background: lightcoral;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background: #6756a6;
+    box-shadow: 10px 10px 5px 0px rgba(103,86,166,0.75);
     opacity: 0.6;
     }
     .b1 {

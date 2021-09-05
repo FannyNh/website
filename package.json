@@ -25,6 +25,7 @@
     "@react-spring/web": "^9.2.4",
     "dayjs": "^1.10.6",
     "frontity": "^1.17.0",
+    "node-fetch": "^3.0.0",
     "react-spring": "^6.1.0",
     "third-theme": "file:packages/third-theme"
   }

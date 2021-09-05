@@ -2,12 +2,9 @@ import React from 'react'
 import {connect, Global, css, styled, Head} from 'frontity'
 import Link from '@frontity/components/link'
 import Switch from '@frontity/components/switch'
-import List from "./list"
+
 import Header from "./header"
-import Post from "./post"
-import Page from "./page"
-import Loading from "./loading"
-import Error from "./error"
+
 import MainAnimation from "./animation/mainAnimation"
 
 const Root = ({state, actions}) => {
@@ -24,7 +21,9 @@ const Root = ({state, actions}) => {
                  html {
                     font-family: system-ui, Verdana, Arial, sans-serif;
                 }
-                body{background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
+                body{
+                background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+                background-color: #90d5ec;
                 width:100vw;
                 height: 100vh;
                 }
@@ -40,6 +39,7 @@ const Root = ({state, actions}) => {
             <Header />
             <Main>
                 <MainAnimation  />
+
                 {/*<Switch>*/}
                 {/*    <Loading when={data.isFetching} />*/}
                 {/*    <List when={data.isArchive}/>*/}

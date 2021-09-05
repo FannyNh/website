@@ -1,6 +1,8 @@
 import React from "react"
 import {connect, styled} from "frontity"
 import Link from '@frontity/components/link'
+import BtnDownload from "./btnDownload/btnDownload";
+
 
 
 const Header = ({state, actions})=>{
@@ -9,15 +11,13 @@ const Header = ({state, actions})=>{
     return(
         <HeaderStyle isPostType={data.isPostType}>
             <HeaderContent>
-                <h1>The third Moira</h1>
-                { state.theme.isUrlVisible
-                    ? <>Current URL: {state.router.link} <Button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</Button></>
-                    : <Button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</Button>
-                }                    <Menu>
-                {/*<Link link="/">Home</Link>*/}
-                {/*<Link link="/destinations">Destinations</Link>*/}
-                {/*<Link link="/about-us">About Us</Link>*/}
-            </Menu>
+                <Menu>
+                    <h1>The third Moira</h1>
+                    <BtnDownload url={"https://www.linkedin.com/in/fanny-nhouyvanisvong-design/"} name={"Linkedin"} className={"linkedin"} />
+                    <BtnDownload url={"https://www.instagram.com/the_third_moira/"} name={"Instagram"} className={"instagram"} />
+                    <BtnDownload url={"https://www.thethirdmoira.fr/wp-content/uploads/2021/09/cv-devWeb-202108.pdf"} name={"Download Resume"} />
+                    <BtnDownload url={"https://www.thethirdmoira.fr/"} name={"OldWebSite"} className={"old"} />
+                </Menu>
             </HeaderContent>
 
         </HeaderStyle>
@@ -31,9 +31,16 @@ const HeaderStyle = styled.header`
    overflow: hidden;
     background-color: inherit;
   position: absolute;
-  top:0;
+   top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
    border-radius: 15px;
-   border: 1px solid #009ffd;
+   border: 1px solid rgba(255,255,255,0.48);
+    z-index: 2;
+     width:400px;
+   height:350px;
      box-shadow: 0 0 1rem 0 rgba(110,123,251,0.2);
      :before {
   background-color: inherit;
@@ -42,37 +49,30 @@ const HeaderStyle = styled.header`
   height: 100%;
   position: absolute;
   width: 100%;
+   z-index: 2;
 }
   
   h1 {
        color: #FFF;
     position: relative;
+    text-align:center;
+    font-size:2em;
     z-index: 2;
+    margin-bottom:1em;
   }
 `
 const HeaderContent = styled.div`
-  max-width: 800px;
+   width:400px;
+   height:350px;
   padding: 2em 1em;
   margin: auto;
 `
-const Menu = styled.nav`
+const Menu = styled.div`
   display: flex;
-  flex-direction: row;
-  margin-top: 1em;
-  & > a {
-    margin-right: 1em;
-    color: steelblue;
-    text-decoration: none;
-  }
+  flex-direction: column;
+   width:100%;
+   height:100%;
+   justify-content: space-around;
+   margin: 0 auto;
 `
 
-const Button = styled.button   `
-background: transparent;
-border: none;
-color: #aaa;
-
-:hover {
-    cursor: pointer;
-    color: #888;
-}
-`
