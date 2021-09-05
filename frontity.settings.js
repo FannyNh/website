@@ -2,36 +2,20 @@ const settings = {
   "name": "website",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "url": "https://www.thethirdmoira.fr",
+      "title": "Creative developer",
+      "description": "portfolio bitch"
     }
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
+      "name": "third-theme",
       "state": {
         "theme": {
           "menu": [
             [
               "Home",
               "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
             ]
           ],
           "featured": {
@@ -45,7 +29,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "https://www.thethirdmoira.fr"
         }
       }
     },
