@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="29508264-ff70-439c-8c05-4971ec715342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/third-theme/src/components/animation/mainAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/third-theme/src/components/animation/mainAnimation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/third-theme/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/third-theme/src/components/header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630846970406</updated>
-      <workItem from="1630846971516" duration="14847000" />
+      <workItem from="1630846971516" duration="15442000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1630847361083</created>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630863890091</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="delete string test">
+      <created>1630916067660</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1630916067660</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +133,7 @@
     <MESSAGE value="init theme" />
     <MESSAGE value="add background animation" />
     <MESSAGE value="deploy vercel" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy vercel" />
+    <MESSAGE value="delete string test" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete string test" />
   </component>
 </project>

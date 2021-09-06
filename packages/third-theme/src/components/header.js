@@ -15,8 +15,8 @@ const Header = ({state, actions})=>{
                     <h1>The third Moira</h1>
                     <BtnDownload url={"https://www.linkedin.com/in/fanny-nhouyvanisvong-design/"} name={"Linkedin"} className={"linkedin"} />
                     <BtnDownload url={"https://www.instagram.com/the_third_moira/"} name={"Instagram"} className={"instagram"} />
-                    <BtnDownload url={"https://www.thethirdmoira.fr/wp-content/uploads/2021/09/cv-devWeb-202108.pdf"} name={"Download Resume"} />
-                    <BtnDownload url={"https://www.thethirdmoira.fr/"} name={"OldWebSite"} className={"old"} />
+                    <BtnDownload url={"https://www.thethirdmoira.fr/wp-content/uploads/2021/09/cv-devWeb-202108.pdf"} name={"Resume"} />
+                    <BtnDownload url={"https://www.thethirdmoira.fr/"} name={"Portfolio"} className={"old"} />
                 </Menu>
             </HeaderContent>
 
