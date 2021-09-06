@@ -37,6 +37,7 @@ const MainAnimation = ({state, actions}) => {
                     <anim.div className="b2" style={{ transform: pos2.interpolate(trans) }} />
                     <anim.div className="b3" style={{ transform: pos1.interpolate(trans) }} />
                 </HooksFilter>
+
             </HooksMain>
         </>
     )
