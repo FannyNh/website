@@ -6,6 +6,7 @@ import Switch from '@frontity/components/switch'
 import Header from "./header"
 
 import MainAnimation from "./animation/mainAnimation"
+import MainAnimationBis from "./animation/mainAnimationBis"
 
 const Root = ({state, actions}) => {
     const data = state.source.get(state.router.link)
@@ -38,7 +39,7 @@ const Root = ({state, actions}) => {
             </Head>
             <Header />
             <Main>
-                <MainAnimation  />
+                <MainAnimationBis  />
 
                 {/*<Switch>*/}
                 {/*    <Loading when={data.isFetching} />*/}
