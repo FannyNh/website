@@ -5,8 +5,9 @@ import Switch from '@frontity/components/switch'
 
 import Header from "./header"
 
-import MainAnimation from "./animation/mainAnimation"
+import List from "./list"
 import MainAnimationBis from "./animation/mainAnimationBis"
+import CardProject from "./cardProject/cardProject"
 
 const Root = ({state, actions}) => {
     const data = state.source.get(state.router.link)
@@ -14,20 +15,21 @@ const Root = ({state, actions}) => {
         <>
             <Global
                 styles={css`
-                 * {
+                  * {
                     margin: 0;
                     padding: 0;
                     box-sizing: border-box;
-                    }
-                 html {
+                  }
+
+                  html {
                     font-family: system-ui, Verdana, Arial, sans-serif;
-                }
-                body{
-                background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-                background-color: #90d5ec;
-                width:100vw;
-                height: 100vh;
-                }
+                  }
+
+                  body {
+                    background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+                    width: 100vw;
+                    height: 100vh;
+                  }
                 `}
             />
             <Head>
@@ -37,18 +39,19 @@ const Root = ({state, actions}) => {
                     content="Based on the Frontity step by step tutorial"
                 />
             </Head>
-            <Header />
+            <Header/>
             <Main>
-                <MainAnimationBis  />
+                <MainAnimationBis/>
 
-                {/*<Switch>*/}
-                {/*    <Loading when={data.isFetching} />*/}
-                {/*    <List when={data.isArchive}/>*/}
-                {/*    <Post when={data.isPost}/>*/}
-                {/*    <Page when={data.isPage}/>*/}
-                {/*    <Page when={data.isDestinations} />*/}
-                {/*    <Error when={data.isError} />*/}
-                {/*</Switch>*/}
+                <Switch>
+                    <CardProject when={data.isPost}/>
+                    {/*<Loading when={data.isFetching} />*/}
+                    <List when={data.isArchive}/>
+                    {/*<Post when={data.isPost}/>*/}
+                    {/*<Page when={data.isPage}/>*/}
+                    {/*<Page when={data.isDestinations} />*/}
+                    {/*<Error when={data.isError} />*/}
+                </Switch>
             </Main>
         </>
     )
@@ -58,10 +61,10 @@ export default connect(Root)
 
 
 const Main = styled.main`
- position: absolute;
-  top:0;
+  position: absolute;
+  top: 0;
   width: 100vw;
   padding: none;
   margin: auto;
-height:100vh;
+  height: 100vh;
 `

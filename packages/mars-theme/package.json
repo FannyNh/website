@@ -15,6 +15,11 @@
   "bugs": {
     "url": "https://community.frontity.org"
   },
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
   "dependencies": {
     "@frontity/components": "^1.8.1",
     "@frontity/html2react": "^1.6.1",
